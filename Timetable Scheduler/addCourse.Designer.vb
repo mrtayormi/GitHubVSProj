@@ -37,6 +37,7 @@ Partial Class addCourse
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.BaWGUIThemeContainer1 = New Timetable_Scheduler.BaWGUIThemeContainer()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.BaWGUIThemeContainer1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -218,6 +219,7 @@ Partial Class addCourse
         'BaWGUIThemeContainer1
         '
         Me.BaWGUIThemeContainer1.BackColor = System.Drawing.Color.White
+        Me.BaWGUIThemeContainer1.Controls.Add(Me.Button1)
         Me.BaWGUIThemeContainer1.Controls.Add(Me.Label6)
         Me.BaWGUIThemeContainer1.Controls.Add(Me.Label5)
         Me.BaWGUIThemeContainer1.Controls.Add(Me.cunittb)
@@ -240,6 +242,18 @@ Partial Class addCourse
         Me.BaWGUIThemeContainer1.Size = New System.Drawing.Size(883, 442)
         Me.BaWGUIThemeContainer1.TabIndex = 0
         Me.BaWGUIThemeContainer1.Text = "Add Course"
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Red
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.ForeColor = System.Drawing.Color.Transparent
+        Me.Button1.Location = New System.Drawing.Point(703, 360)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(101, 45)
+        Me.Button1.TabIndex = 16
+        Me.Button1.Text = "EXIT"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'addCourse
         '
@@ -271,4 +285,5 @@ Partial Class addCourse
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents BaWGUIThemeContainer1 As Timetable_Scheduler.BaWGUIThemeContainer
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

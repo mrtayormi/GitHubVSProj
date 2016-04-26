@@ -24,8 +24,8 @@ Partial Class addLectureHall
     Private Sub InitializeComponent()
         Me.BaWGUIThemeContainer1 = New Timetable_Scheduler.BaWGUIThemeContainer()
         Me.BaWGUIButton1 = New Timetable_Scheduler.BaWGUIButton()
-        Me.BaWGUITextBox2 = New Timetable_Scheduler.BaWGUITextBox()
-        Me.BaWGUITextBox1 = New Timetable_Scheduler.BaWGUITextBox()
+        Me.rmtb = New Timetable_Scheduler.BaWGUITextBox()
+        Me.blktb = New Timetable_Scheduler.BaWGUITextBox()
         Me.BaWGUIThemeContainer1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -33,8 +33,8 @@ Partial Class addLectureHall
         '
         Me.BaWGUIThemeContainer1.BackColor = System.Drawing.Color.White
         Me.BaWGUIThemeContainer1.Controls.Add(Me.BaWGUIButton1)
-        Me.BaWGUIThemeContainer1.Controls.Add(Me.BaWGUITextBox2)
-        Me.BaWGUIThemeContainer1.Controls.Add(Me.BaWGUITextBox1)
+        Me.BaWGUIThemeContainer1.Controls.Add(Me.rmtb)
+        Me.BaWGUIThemeContainer1.Controls.Add(Me.blktb)
         Me.BaWGUIThemeContainer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BaWGUIThemeContainer1.DrawButtonStrings = True
         Me.BaWGUIThemeContainer1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
@@ -54,35 +54,35 @@ Partial Class addLectureHall
         Me.BaWGUIButton1.TabIndex = 2
         Me.BaWGUIButton1.Text = "Save"
         '
-        'BaWGUITextBox2
+        'rmtb
         '
-        Me.BaWGUITextBox2.BackColor = System.Drawing.Color.Transparent
-        Me.BaWGUITextBox2.Font = New System.Drawing.Font("Arial", 16.0!)
-        Me.BaWGUITextBox2.Image = Global.Timetable_Scheduler.My.Resources.Resources.doc_lines_stright_icon_48
-        Me.BaWGUITextBox2.Location = New System.Drawing.Point(93, 161)
-        Me.BaWGUITextBox2.MaxLength = 32767
-        Me.BaWGUITextBox2.Multiline = False
-        Me.BaWGUITextBox2.Name = "BaWGUITextBox2"
-        Me.BaWGUITextBox2.ReadOnly = False
-        Me.BaWGUITextBox2.Size = New System.Drawing.Size(530, 53)
-        Me.BaWGUITextBox2.TabIndex = 1
-        Me.BaWGUITextBox2.Text = "Room"
-        Me.BaWGUITextBox2.UseSystemPasswordChar = False
+        Me.rmtb.BackColor = System.Drawing.Color.Transparent
+        Me.rmtb.Font = New System.Drawing.Font("Arial", 16.0!)
+        Me.rmtb.Image = Global.Timetable_Scheduler.My.Resources.Resources.doc_lines_stright_icon_48
+        Me.rmtb.Location = New System.Drawing.Point(93, 161)
+        Me.rmtb.MaxLength = 32767
+        Me.rmtb.Multiline = False
+        Me.rmtb.Name = "rmtb"
+        Me.rmtb.ReadOnly = False
+        Me.rmtb.Size = New System.Drawing.Size(530, 53)
+        Me.rmtb.TabIndex = 1
+        Me.rmtb.Text = "Room"
+        Me.rmtb.UseSystemPasswordChar = False
         '
-        'BaWGUITextBox1
+        'blktb
         '
-        Me.BaWGUITextBox1.BackColor = System.Drawing.Color.Transparent
-        Me.BaWGUITextBox1.Font = New System.Drawing.Font("Arial", 16.0!)
-        Me.BaWGUITextBox1.Image = Global.Timetable_Scheduler.My.Resources.Resources._2x2_grid_icon_48
-        Me.BaWGUITextBox1.Location = New System.Drawing.Point(93, 80)
-        Me.BaWGUITextBox1.MaxLength = 32767
-        Me.BaWGUITextBox1.Multiline = False
-        Me.BaWGUITextBox1.Name = "BaWGUITextBox1"
-        Me.BaWGUITextBox1.ReadOnly = False
-        Me.BaWGUITextBox1.Size = New System.Drawing.Size(530, 53)
-        Me.BaWGUITextBox1.TabIndex = 0
-        Me.BaWGUITextBox1.Text = "Block Name"
-        Me.BaWGUITextBox1.UseSystemPasswordChar = False
+        Me.blktb.BackColor = System.Drawing.Color.Transparent
+        Me.blktb.Font = New System.Drawing.Font("Arial", 16.0!)
+        Me.blktb.Image = Global.Timetable_Scheduler.My.Resources.Resources._2x2_grid_icon_48
+        Me.blktb.Location = New System.Drawing.Point(93, 80)
+        Me.blktb.MaxLength = 32767
+        Me.blktb.Multiline = False
+        Me.blktb.Name = "blktb"
+        Me.blktb.ReadOnly = False
+        Me.blktb.Size = New System.Drawing.Size(530, 53)
+        Me.blktb.TabIndex = 0
+        Me.blktb.Text = "Block Name"
+        Me.blktb.UseSystemPasswordChar = False
         '
         'addLectureHall
         '
@@ -99,7 +99,7 @@ Partial Class addLectureHall
 
     End Sub
     Friend WithEvents BaWGUIThemeContainer1 As Timetable_Scheduler.BaWGUIThemeContainer
-    Friend WithEvents BaWGUITextBox2 As Timetable_Scheduler.BaWGUITextBox
-    Friend WithEvents BaWGUITextBox1 As Timetable_Scheduler.BaWGUITextBox
+    Friend WithEvents rmtb As Timetable_Scheduler.BaWGUITextBox
+    Friend WithEvents blktb As Timetable_Scheduler.BaWGUITextBox
     Friend WithEvents BaWGUIButton1 As Timetable_Scheduler.BaWGUIButton
 End Class

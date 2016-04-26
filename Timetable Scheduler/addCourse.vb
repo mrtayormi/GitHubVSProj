@@ -70,8 +70,8 @@ Public Class addCourse
                     "VALUES ('" & ctitletb.Text & "','" & ccodetb.Text & "','" & cunittb.Text & "', '" & levelcb.Text & "', '" & hourscb.Text & "', '" & lecturercb.Text & "')"
         saveCourse(sqlQuery)
     End Sub
-
-    Private Sub BaWGUIButton2_Click(sender As Object, e As EventArgs) Handles BaWGUIButton2.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Application.Exit()
 
     End Sub
 End Class
